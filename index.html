@@ -1,0 +1,2458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pernikahan Rizal dan Yik</title>
+  <meta name="theme-color" content="#d3b799" />
+  <meta name="description" content="Undangmu Web Nikah Digital Undangan Website Nikah Online">
+  <meta content="web nikah, undangan nikah, web undangan, cara web undangan nikah, menikah, mengundang" name="keywords">
+  <meta property="og:image" content="http://localhost/undangan/assets/high-angle-engagement-rings-beside-flowers.jpg" />
+  <meta property="og:url" content="http://localhost/undangan/" />
+  <meta property="og:type" content="website" />
+
+
+  <meta property="og:title" content="Pernikahan Rizal dan Yik" />
+  <meta property="og:description"
+    content="Rizal dan Yik turut mengundang teman-teman, sahabat dan keluarga menyaksikan pengesahan kisah cinta Kami dalam ikatan pernikahan" />
+
+
+  <meta property="twitter:title" content="Pernikahan Rizal dan Yik">
+
+  <meta property="twitter:description"
+    content="Rizal dan Yik turut mengundang teman-teman, sahabat dan keluarga menyaksikan pengesahan kisah cinta Kami dalam ikatan pernikahan">
+
+  <meta property="twitter:image"
+    content="http://localhost/undangan/assets/high-angle-engagement-rings-beside-flowers.jpg">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDD8MCZBP4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZDD8MCZBP4');
+    function openAmplop() {
+      //get class list
+      var classList = document.getElementById("jadwal1").classList;
+      if (classList.contains("hide")) {
+        //add class hide
+        document.getElementById("jadwal1").classList.remove("hide");
+      } else {
+        //remove class hide
+        document.getElementById("jadwal1").classList.add("hide");
+      }
+      //remove class hide
+      // document.getElementById("jadwal1").classList.remove("hide");
+    }
+  </script>
+
+  <link href="http://localhost/undangan/assets/theme/assets/img/favicon.png" rel="icon">
+  <link href="http://localhost/undangan/assets/theme/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sofia:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Rouge Script:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+
+  <link href="http://localhost/undangan/assets/theme/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost/undangan/assets/theme/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="http://localhost/undangan/assets/theme/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="http://localhost/undangan/assets/theme/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="http://localhost/undangan/assets/theme/assets/vendor/ninja-slider/ninja-slider.css" rel="stylesheet">
+  <link href="http://localhost/undangan/assets/theme/assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://localhost/undangan/assets/vendor/aos/aos.css" />
+</head>
+<style>
+  /*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+  body {
+    font-family: "Nunito", sans-serif;
+    color: #444444;
+  }
+
+  a {
+    color: #d3b799;
+  }
+
+  a:hover {
+    color: #ea6981;
+    text-decoration: none;
+  }
+
+  /*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+  .hide {
+    display: none;
+  }
+
+  .musik {
+    position: fixed;
+    /* display: none; */
+    right: 15px;
+    bottom: 70px;
+    z-index: 99999;
+    transition: 0.5s;
+  }
+
+  .back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 120px;
+    z-index: 99999;
+    transition: 0.5s;
+  }
+
+  .musik i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #d3b799;
+    color: #fff;
+    transition: all 0.4s;
+  }
+
+  .back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #d3b799;
+    color: #fff;
+    transition: all 0.4s;
+  }
+
+  /* .back-to-top:hover {
+        bottom: 19px;
+    } */
+
+  /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+  #header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+  }
+
+  #header .logo {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Sofia", sans-serif;
+  }
+
+  #header .logo a {
+    color: #fff;
+  }
+
+  #header .logo img {
+    max-height: 40px;
+  }
+
+  #header.header-scrolled,
+  #header.header-inner-pages {
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+  }
+
+  #header.header-scrolled .logo a,
+  #header.header-inner-pages .logo a {
+    color: #263238;
+  }
+
+  @media (max-width: 992px) {
+    #header .logo {
+      font-size: 28px;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+  /* Desktop Navigation */
+  .nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-menu>ul {
+    display: flex;
+  }
+
+  .nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 25px;
+  }
+
+  .nav-menu a {
+    display: block;
+    position: relative;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 15px;
+    padding: 0 4px;
+    letter-spacing: 0.4px;
+    font-family: "Sofia", sans-serif;
+  }
+
+  .nav-menu>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #d3b799;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .nav-menu a:hover:before,
+  .nav-menu li:hover>a:before,
+  .nav-menu .active>a:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  .nav-menu .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 30px);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+  }
+
+  .nav-menu .drop-down:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  .nav-menu .drop-down li {
+    min-width: 180px;
+    position: relative;
+  }
+
+  .nav-menu .drop-down ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    color: #263238;
+  }
+
+  .nav-menu .drop-down ul a:hover,
+  .nav-menu .drop-down ul .active>a,
+  .nav-menu .drop-down ul li:hover>a {
+    color: #d3b799;
+  }
+
+  .nav-menu .drop-down>a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 5px;
+  }
+
+  .nav-menu .drop-down .drop-down ul {
+    top: 0;
+    left: calc(100% - 30px);
+  }
+
+  .nav-menu .drop-down .drop-down:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+  }
+
+  .nav-menu .drop-down .drop-down>a {
+    padding-right: 35px;
+  }
+
+  .nav-menu .drop-down .drop-down>a:after {
+    content: "\eaa0";
+    font-family: IcoFont;
+    position: absolute;
+    right: 15px;
+  }
+
+  .header-scrolled .nav-menu>ul>li>a,
+  .header-inner-pages .nav-menu>ul>li>a {
+    color: #263238;
+  }
+
+  @media (max-width: 1366px) {
+    .nav-menu .drop-down .drop-down ul {
+      left: -90%;
+    }
+
+    .nav-menu .drop-down .drop-down:hover>ul {
+      left: -100%;
+    }
+
+    .nav-menu .drop-down .drop-down>a:after {
+      content: "\ea9d";
+    }
+  }
+
+  /* Mobile Navigation */
+  .mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+  }
+
+  .mobile-nav-toggle i {
+    color: #d3b799;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+
+  .mobile-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .mobile-nav a {
+    display: block;
+    position: relative;
+    color: #263238;
+    padding: 10px 20px;
+    font-weight: 500;
+    outline: none;
+  }
+
+  .mobile-nav a:hover,
+  .mobile-nav .active>a,
+  .mobile-nav li:hover>a {
+    color: #d3b799;
+    text-decoration: none;
+  }
+
+  .mobile-nav .drop-down>a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 10px;
+    position: absolute;
+    right: 15px;
+  }
+
+  .mobile-nav .active.drop-down>a:after {
+    content: "\eaa1";
+  }
+
+  .mobile-nav .drop-down>a {
+    padding-right: 35px;
+  }
+
+  .mobile-nav .drop-down ul {
+    display: none;
+    overflow: hidden;
+  }
+
+  .mobile-nav .drop-down li {
+    padding-left: 20px;
+  }
+
+  .mobile-nav-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(45, 37, 38, 0.6);
+    overflow: hidden;
+    display: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .mobile-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle i {
+    color: #fff;
+  }
+
+  /*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("http://localhost/undangan/assets/high-angle-engagement-rings-beside-flowers.jpg") top center;
+    background-size: cover;
+    position: relative;
+  }
+
+  #hero:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(211, 183, 153, 0.2), rgba(0, 0, 0, 0.3));
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #hero .hero-container {
+    /*position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 85vh;
+    padding: 0 15px;
+  }
+
+  #hero h3 {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 26px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+
+  }
+
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    font-family: "Rouge Script", sans-serif;
+  }
+
+  #hero h1 span {
+    color: #d3b799;
+  }
+
+  #hero h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 100px 0 100px;
+  }
+
+  #hero .btn-get-started {
+    font-family: "Sofia", sans-serif;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 9px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  #hero .btn-get-started:hover {
+    background: #d3b799;
+    border: 2px solid #d3b799;
+  }
+
+  #hero .line {
+    font-family: "Sofia", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px 8px 20px;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #hero h3 {
+      font-size: 22px;
+    }
+
+    #hero h1 {
+      font-size: 50px;
+      line-height: 36px;
+    }
+
+    #hero h2 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      padding: 0 0 0 0;
+    }
+  }
+
+  @media (max-height: 500px) {
+    #hero {
+      height: 150vh;
+    }
+  }
+
+  .hero-waves {
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: relative;
+  }
+
+  .wave1 use {
+    -webkit-animation: move-forever1 10s linear infinite;
+    animation: move-forever1 10s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+  }
+
+  .wave2 use {
+    -webkit-animation: move-forever2 8s linear infinite;
+    animation: move-forever2 8s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+  }
+
+  .wave3 use {
+    -webkit-animation: move-forever3 6s linear infinite;
+    animation: move-forever3 6s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+  }
+
+
+  @-webkit-keyframes move-forever1 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+
+  @keyframes move-forever1 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+
+  @-webkit-keyframes move-forever2 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+
+  @keyframes move-forever2 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+
+  @-webkit-keyframes move-forever3 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+
+  @keyframes move-forever3 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+  section {
+    padding: 40px 0;
+  }
+
+  .section-bg {
+    background-color: #f5f5f5;
+  }
+
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .section-title h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    line-height: 1;
+    margin: 0;
+    background: #fdeff2;
+    color: #d3b799;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 20px;
+
+  }
+
+  .section-title h3 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Sofia", sans-serif;
+  }
+
+  .section-title h3 span {
+    color: #d3b799;
+  }
+
+  .section-title p {
+    margin: auto auto 0 auto;
+    font-weight: 600;
+  }
+
+  @media (min-width: 1024px) {
+    .section-title p {
+      width: 50%;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+  .about .content h3 {
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .about .content ul li {
+    padding-left: 28px;
+    position: relative;
+  }
+
+  .about .content ul li+li {
+    margin-top: 10px;
+  }
+
+  .about .content ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #d3b799;
+    line-height: 1;
+  }
+
+  .about .content p:last-child {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .about .content .btn-learn-more {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #d3b799;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #d3b799;
+  }
+
+  .about .content .btn-learn-more:hover {
+    background: #d3b799;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+  .services {
+    padding-bottom: 0px;
+  }
+
+  .services .icon-box {
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .services .icon-box::before {
+    content: '';
+    position: absolute;
+    background: #fdeff2;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.4s;
+    z-index: -1;
+  }
+
+  .services .icon-box:hover::before {
+    background: #d3b799;
+    top: 0;
+    border-radius: 0px;
+  }
+
+  .services .icon {
+    margin-bottom: 15px;
+  }
+
+  .services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    color: #d3b799;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .services .title a {
+    color: #111;
+  }
+
+  .services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  .services .icon-box:hover .title a,
+  .services .icon-box:hover .description {
+    color: #fff;
+  }
+
+  .services .icon-box:hover .icon i {
+    color: #fff;
+  }
+
+  /*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+  .features {
+    padding-top: 0;
+  }
+
+  .features .icon-box {
+    padding: 20px;
+    transition: ease-in-out 0.3s;
+    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+    text-align: center;
+  }
+
+  .features .icon-box i {
+    font-size: 32px;
+    padding-bottom: 20px;
+
+  }
+
+  .features .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+  }
+
+  .features .icon-box h3 a {
+    color: #263238;
+    transition: ease-in-out 0.3s;
+  }
+
+  .features .icon-box:hover a {
+    color: #d3b799;
+  }
+
+  /*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+  .cta {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("http://localhost/undangan/assets/theme/assets/img/cta-bg.jpg") center center;
+    background-size: cover;
+    padding: 60px 0;
+  }
+
+  .cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .cta p {
+    color: #fff;
+  }
+
+  .cta .cta-btn {
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+
+  .cta .cta-btn:hover {
+    background: #d3b799;
+    border: 2px solid #d3b799;
+  }
+
+  @media (min-width: 1024px) {
+    .cta {
+      background-attachment: fixed;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+  .portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+  }
+
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 17px 9px 17px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: #444444;
+    margin: 0 3px 10px 3px;
+    transition: all ease-in-out 0.3s;
+    background: #ede9e9;
+    border-radius: 50px;
+  }
+
+  .portfolio #portfolio-flters li:hover,
+  .portfolio #portfolio-flters li.filter-active {
+    color: #fff;
+    background: #d3b799;
+  }
+
+  .portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  .portfolio .portfolio-item img {
+    position: relative;
+    top: 0;
+    transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .portfolio .portfolio-item .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -50px;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    background: #d3b799;
+    padding: 15px 20px;
+  }
+
+  .portfolio .portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .portfolio .portfolio-item .portfolio-info p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .portfolio .portfolio-item .portfolio-info .preview-link,
+  .portfolio .portfolio-item .portfolio-info .details-link {
+    position: absolute;
+    right: 50px;
+    font-size: 24px;
+    top: calc(50% - 18px);
+    color: white;
+    transition: ease-in-out 0.3s;
+  }
+
+  .portfolio .portfolio-item .portfolio-info .preview-link:hover,
+  .portfolio .portfolio-item .portfolio-info .details-link:hover {
+    color: #f7c2cc;
+  }
+
+  .portfolio .portfolio-item .portfolio-info .details-link {
+    right: 15px;
+  }
+
+  .portfolio .portfolio-item:hover img {
+    top: -30px;
+  }
+
+  .portfolio .portfolio-item:hover .portfolio-info {
+    opacity: 1;
+    bottom: 0;
+  }
+
+  /*--------------------------------------------------------------
+# Jadwal
+--------------------------------------------------------------*/
+  .jadwal .box {
+    padding: 20px;
+    background: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #f9f9f9;
+  }
+
+  .amplop {
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px 15px;
+  }
+
+  .jadwal .box h3 {
+    font-weight: 400;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #263238;
+    font-family: "Sofia", sans-serif;
+  }
+
+  .jadwal .box h4 {
+    font-size: 42px;
+    color: #d3b799;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .jadwal .box h4 sup {
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+  }
+
+  .jadwal .box h4 span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .jadwal .box ul {
+    padding: 0;
+    list-style: none;
+    color: #263238;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .jadwal .box ul li {
+    padding-bottom: 16px;
+  }
+
+  .jadwal .box ul i {
+    color: #d3b799;
+    font-size: 18px;
+    padding-right: 4px;
+  }
+
+  .jadwal .box ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+  }
+
+  .jadwal .box .btn-wrap {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .jadwal .box .btn-buy {
+    display: inline-block;
+    padding: 8px 40px 10px 40px;
+    border-radius: 50px;
+    border: 2px solid #d3b799;
+    color: #d3b799;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .jadwal .box .btn-buy:hover {
+    background: #d3b799;
+    color: #fff;
+  }
+
+  .jadwal .recommended {
+    border-color: #d3b799;
+  }
+
+  .jadwal .recommended .btn-buy {
+    background: #d3b799;
+    color: #fff;
+  }
+
+  .jadwal .recommended .btn-buy:hover {
+    background: #d91e42;
+    border-color: #d91e42;
+  }
+
+  .jadwal .recommended-badge {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-size: 13px;
+    padding: 3px 25px 6px 25px;
+    background: #fce6ea;
+    color: #d3b799;
+    border-radius: 50px;
+  }
+
+  /*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+  .faq {
+    padding: 60px 0;
+  }
+
+  .faq .faq-list {
+    padding: 0;
+    list-style: none;
+    height: 380px;
+    overflow-y: scroll;
+  }
+
+  .faq .faq-list li {
+    padding: 0 0 20px 0;
+    text-align: center;
+  }
+
+  .faq .faq-list a {
+    display: block;
+    position: relative;
+    font-family: #d3b799;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .faq .faq-list i {
+    font-size: 18px;
+    position: absolute;
+    left: -25px;
+    top: 6px;
+  }
+
+  .faq .faq-list p {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  .faq .faq-list a.collapse {
+    color: #d3b799;
+  }
+
+  .faq .faq-list a.collapsed {
+    color: #343a40;
+  }
+
+  .faq .faq-list a.collapsed:hover {
+    color: #d3b799;
+  }
+
+  .faq .faq-list a.collapsed i::before {
+    content: "\eab2" !important;
+  }
+
+  @media (min-width: 1280px) {
+    .faq .container {
+      padding: 0 120px;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Mempelai
+--------------------------------------------------------------*/
+  .mempelai {
+    /* background: #fff; */
+    padding: 60px 0;
+  }
+
+  .mempelai .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .mempelai .member .member-img {
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    margin-top: 25px;
+
+
+  }
+
+  .mempelai .member .inner-img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .mempelai .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  .mempelai .member .social a {
+    transition: color 0.3s;
+    color: #263238;
+    margin: 0 10px;
+    padding-top: 8px;
+    display: inline-block;
+  }
+
+  .mempelai .member .social a:hover {
+    color: #d3b799;
+  }
+
+  .mempelai .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+  }
+
+  .mempelai .member .member-info {
+    padding: 25px 15px;
+  }
+
+  .mempelai .member .member-info h2 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #d3b799;
+    font-family: "Sofia", sans-serif;
+  }
+
+  .mempelai .member .member-info span {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    color: #263238;
+  }
+
+  .mempelai .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+  }
+
+  .mempelai .member:hover .social {
+    opacity: 1;
+  }
+
+  /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+  .contact .info {
+    width: 100%;
+    background: #fff;
+  }
+
+  .contact .info i {
+    font-size: 20px;
+    color: #d3b799;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #fdeff2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #263238;
+  }
+
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #816a6e;
+  }
+
+  .contact .info .email,
+  .contact .info .phone {
+    margin-top: 40px;
+  }
+
+  .contact .info .email:hover i,
+  .contact .info .address:hover i,
+  .contact .info .phone:hover i {
+    background: #d3b799;
+    color: #fff;
+  }
+
+  .contact .php-email-form {
+    width: 100%;
+    background: #fff;
+  }
+
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+
+  .contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+
+  .contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+  }
+
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+
+  .contact .php-email-form input:focus,
+  .contact .php-email-form textarea:focus {
+    border-color: #d3b799;
+  }
+
+  .contact .php-email-form input {
+    height: 44px;
+  }
+
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+
+  .contact .php-email-form button[type="submit"] {
+    background: #d3b799;
+    border: 0;
+    padding: 10px 28px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+
+  .contact .php-email-form button[type="submit"]:hover {
+    background: #d01d3f;
+  }
+
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+  .breadcrumbs {
+    padding: 15px 0;
+    background: #f6f4f4;
+    margin-top: 67px;
+  }
+
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 50px;
+    }
+  }
+
+  .breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #655356;
+    content: "/";
+  }
+
+  /*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+  .portfolio-details {
+    padding-top: 40px;
+  }
+
+  .portfolio-details .portfolio-details-container {
+    position: relative;
+  }
+
+  .portfolio-details .portfolio-details-carousel {
+    position: relative;
+    z-index: 1;
+  }
+
+  .portfolio-details .portfolio-details-carousel .owl-nav,
+  .portfolio-details .portfolio-details-carousel .owl-dots {
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  .portfolio-details .portfolio-details-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd !important;
+  }
+
+  .portfolio-details .portfolio-details-carousel .owl-dot.active {
+    background-color: #d3b799 !important;
+  }
+
+  .portfolio-details .portfolio-info {
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+
+  .portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px;
+  }
+
+  .portfolio-details .portfolio-description {
+    padding-top: 50px;
+  }
+
+  .portfolio-details .portfolio-description h2 {
+    width: 50%;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-details .portfolio-description p {
+    padding: 0 0 0 0;
+  }
+
+  @media (max-width: 768px) {
+    .portfolio-details .portfolio-info {
+      position: static;
+      margin-top: 30px;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+  #footer {
+    color: #444444;
+    font-size: 14px;
+    background: #f6f4f4;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+  }
+
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+
+  #footer .footer-top .footer-contact h4 {
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  #footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Nunito", sans-serif;
+    color: #777777;
+  }
+
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+    position: relative;
+    padding-bottom: 12px;
+  }
+
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #ea6981;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+
+  #footer .footer-top .footer-links ul a {
+    color: #777777;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+
+  #footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #d3b799;
+  }
+
+  #footer .footer-newsletter {
+    font-size: 15px;
+  }
+
+  #footer .footer-newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+    position: relative;
+    padding-bottom: 12px;
+  }
+
+  #footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    text-align: left;
+    border: 1px solid #f7c2cc;
+  }
+
+  #footer .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+  }
+
+  #footer .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 15px;
+    padding: 0 22px;
+    background: #d3b799;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  #footer .footer-newsletter form input[type="submit"]:hover {
+    background: #d01d3f;
+  }
+
+  #footer .credits {
+    padding-top: 5px;
+    font-size: 13px;
+    color: #F6F4F4;
+  }
+
+  #footer .credits a {
+    color: #F6F4F4;
+  }
+
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #d3b799;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+
+  #footer .social-links a:hover {
+    background: #d01d3f;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .logo_streaming {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+
+
+
+  /*--------------------------------------------------------------
+# story
+--------------------------------------------------------------*/
+  .story .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.5s;
+  }
+
+  .story .member .pic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+  }
+
+  .story .member .pic img {
+    transition: ease-in-out 0.3s;
+  }
+
+  .story .member:hover {
+    transform: translateY(-10px);
+  }
+
+  .story .member .member-info {
+    padding-left: 30px;
+  }
+
+  .story .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 23px;
+    color: #d3b799;
+    font-family: "Sofia", sans-serif;
+  }
+
+  .story .member h2 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: "Sofia", sans-serif;
+  }
+
+  .story .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .story .member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #cbd6e9;
+    bottom: 0;
+    left: 0;
+  }
+
+  .story .member p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+  }
+
+  .story .member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .story .member .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8;
+  }
+
+  .story .member .social a i {
+    color: #343a40;
+    font-size: 16px;
+    margin: 0 2px;
+  }
+
+  .story .member .social a:hover {
+    background: #31a9e1;
+  }
+
+  .story .member .social a:hover i {
+    color: #fff;
+  }
+
+  .story .member .social a+a {
+    margin-left: 8px;
+  }
+
+  #loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #d3b799;
+    /* background-color: #000000; */
+    background: url("http://localhost/undangan/assets/high-angle-engagement-rings-beside-flowers.jpg") top center;
+    background-size: cover;
+
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0px;
+
+  }
+
+  #loader-wrapper:before {
+    content: "";
+    background: linear-gradient(to top, rgba(211, 183, 153, 0.7), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /*Text Loading */
+  #loader-wrapper h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    font-family: "Rouge Script", sans-serif;
+  }
+
+  #loader-wrapper h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+  }
+
+  #loader-wrapper .btn-open {
+    font-family: "Sofia", sans-serif;
+    /* text-transform: uppercase; */
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 9px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 19px;
+  }
+
+  .ornamen {
+    height: 50px;
+    margin-top: 4px;
+  }
+
+  .colored {
+    background-color: #d3b799;
+
+    -webkit-mask: url("http://localhost/undangan/assets/img/ornamen/6.png") no-repeat center / contain;
+
+  }
+
+  .white {
+    background-color: #fff;
+
+    -webkit-mask: url("http://localhost/undangan/assets/img/ornamen/6.png") no-repeat center / contain;
+
+  }
+</style>
+
+<body>
+
+  <!--fungsi untuk mengubah hari inggris menjadi indonesia-->
+
+  <div id="loader-wrapper">
+    <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="ornamen white"></div>
+      <h2>Rizal <small>&</small> Yik</h2>
+
+    </div>
+    <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000">
+      <a class="btn-open" id="btn-play" onclick="playAwal()">Buka Undangan</a>
+    </div>
+  </div>
+
+  <header id="header" class="fixed-bottom shadow-sm p-3 mb-6 bg-white rounded" style="font-size:25px">
+    <nav class="navbar navbar-light bg-white navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none">
+      <ul class="navbar-nav nav-justified w-100">
+        <li class="nav-item">
+          <a href="#hero" class="nav-link scrollto">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5 12.7596C5 11.4019 5 10.723 5.27446 10.1262C5.54892 9.52949 6.06437 9.08769 7.09525 8.20407L8.09525 7.34693C9.95857 5.7498 10.8902 4.95123 12 4.95123C13.1098 4.95123 14.0414 5.7498 15.9047 7.34693L16.9047 8.20407C17.9356 9.08769 18.4511 9.52949 18.7255 10.1262C19 10.723 19 11.4019 19 12.7596V17C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 21 16.8856 21 15 21H9C7.11438 21 6.17157 21 5.58579 20.4142C5 19.8284 5 18.8856 5 17V12.7596Z"
+                stroke="#d3b799" stroke-width="2" />
+              <path d="M14.5 21V16C14.5 15.4477 14.0523 15 13.5 15H10.5C9.94772 15 9.5 15.4477 9.5 16V21"
+                stroke="#d3b799" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#mempelai" class="nav-link scrollto">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.45067 13.9082L11.4033 20.4395C11.6428 20.6644 11.7625 20.7769 11.9037 20.8046C11.9673 20.8171 12.0327 20.8171 12.0963 20.8046C12.2375 20.7769 12.3572 20.6644 12.5967 20.4395L19.5493 13.9082C21.5055 12.0706 21.743 9.0466 20.0978 6.92607L19.7885 6.52734C17.8203 3.99058 13.8696 4.41601 12.4867 7.31365C12.2913 7.72296 11.7087 7.72296 11.5133 7.31365C10.1304 4.41601 6.17972 3.99058 4.21154 6.52735L3.90219 6.92607C2.25695 9.0466 2.4945 12.0706 4.45067 13.9082Z"
+                stroke="#d3b799" stroke-width="2" />
+            </svg>
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#jadwal" class="nav-link scrollto">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="6" width="18" height="15" rx="2" stroke="#d3b799" stroke-width="2" />
+              <path
+                d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                fill="#d3b799" />
+              <path d="M7 3L7 6" stroke="#d3b799" stroke-width="2" stroke-linecap="round" />
+              <path d="M17 3L17 6" stroke="#d3b799" stroke-width="2" stroke-linecap="round" />
+              <rect x="7" y="12" width="4" height="2" rx="0.5" fill="#d3b799" />
+              <rect x="7" y="16" width="4" height="2" rx="0.5" fill="#d3b799" />
+              <rect x="13" y="12" width="4" height="2" rx="0.5" fill="#d3b799" />
+              <rect x="13" y="16" width="4" height="2" rx="0.5" fill="#d3b799" />
+            </svg></a>
+        </li>
+        <li class="nav-item">
+          <a href="#galeri" class="nav-link scrollto"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 10C3 9.05719 3 8.58579 3.29289 8.29289C3.58579 8 4.05719 8 5 8H19C19.9428 8 20.4142 8 20.7071 8.29289C21 8.58579 21 9.05719 21 10V11.5C21 11.9659 21 12.1989 20.9239 12.3827C20.8224 12.6277 20.6277 12.8224 20.3827 12.9239C20.1989 13 19.9659 13 19.5 13V13C19.0341 13 18.8011 13 18.6173 13.0761C18.3723 13.1776 18.1776 13.3723 18.0761 13.6173C18 13.8011 18 14.0341 18 14.5V18C18 18.9428 18 19.4142 17.7071 19.7071C17.4142 20 16.9428 20 16 20H8C7.05719 20 6.58579 20 6.29289 19.7071C6 19.4142 6 18.9428 6 18V14.5C6 14.0341 6 13.8011 5.92388 13.6173C5.82239 13.3723 5.62771 13.1776 5.38268 13.0761C5.19891 13 4.96594 13 4.5 13V13C4.03406 13 3.80109 13 3.61732 12.9239C3.37229 12.8224 3.17761 12.6277 3.07612 12.3827C3 12.1989 3 11.9659 3 11.5V10Z"
+                stroke="#D3B799" stroke-width="2" />
+              <path d="M5 13H19" stroke="#D3B799" stroke-width="2" stroke-linecap="round" />
+              <path d="M12 7L12 20" stroke="#D3B799" stroke-width="2" stroke-linecap="round" />
+              <path
+                d="M12 7L11.1214 6.12144C10.0551 5.05514 8.75521 4.25174 7.3246 3.77487V3.77487C6.18099 3.39366 5 4.24487 5 5.45035V5.63246C5 6.44914 5.52259 7.1742 6.29737 7.43246L8 8"
+                stroke="#D3B799" stroke-width="2" stroke-linecap="round" />
+              <path
+                d="M12 7L12.8786 6.12144C13.9449 5.05514 15.2448 4.25174 16.6754 3.77487V3.77487C17.819 3.39366 19 4.24487 19 5.45035V5.63246C19 6.44914 18.4774 7.1742 17.7026 7.43246L16 8"
+                stroke="#D3B799" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-container">
+      <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000">
+
+        <h1>Rizal<br><small>&</small><br>Yik</h1>
+
+      </div>
+      <!--Cover pakai informasi resepsi-->
+    </div>
+    </div>
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+  </section>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
+            <div class="ornamen colored"></div>
+          </div>
+          <div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
+            <h3><span>Pengantar</span></h3>
+          </div>
+        </div>
+        <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="row content">
+            <div class="col-lg-12">
+              <p style="text-align:center">Assalamualaikum Wr. Wb.<br />
+                Mahasuci Allah telah menciptakan makhluk hidup dengan berpasang-pasangan, begitu pula manusia. Sungguh
+                besar rahmat dan karunia yang diberikan-Nya kepada keluarga Kami. Maka izinkan Kami mengundang sekaligus
+                mengharapkan doa restu dari Bapak/Ibu dan Saudara/i dalam acara pernikahan Kami</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mempelai" class="mempelai section-bg">
+      <div class="container">
+        <div class="section-title">
+          <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
+            <div class="ornamen colored"></div>
+          </div>
+          <div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
+            <h3><span>Memperkenalkan</span></h3>
+            <p>Kami yang berbahagia</p>
+          </div>
+        </div>
+        <!-- script untuk tukar kata laki2 dan perempuan -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 align-items-center">
+            <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
+              <div class="member">
+
+                <div class="member-info">
+                  <h2>Oktrizal Setiawan</h2>
+                  <span>Putra dari Bapak Zaini dan Ibu Ramawan </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 align-items-center">
+            <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
+              <div class="member">
+
+                <div class="member-info">
+                  <h2>Sri Zholeha Wulandari </h2>
+                  <span>Putri dari bapak Aslan &amp; Ibu Linda </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- script untuk tukar laki2 dan perempuan -->
+
+      </div>
+    </section>
+
+    <section id="jadwal" class="jadwal">
+      <div class="container">
+        <div class="section-title">
+          <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
+            <div class="ornamen colored"></div>
+          </div>
+          <div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
+            <h3><span>Jadwal</span></h3>
+            <p>Kami mengharapkan kehadiran Bapak/Ibu/Sdr/i pada acara yang kami selenggarakan.</p>
+          </div>
+        </div>
+        <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000" style="padding-bottom: 30px;">
+          <div class="row">
+
+
+
+            <div class="col-lg-6 col-md-6">
+              <div class="box">
+
+                <h3>Akad &amp;Resepsi</h3>
+
+                <p>The Royal Convention Center<br />
+                  Jl. KH. Azhari No.819, Tangga Takat, Kec. Seberang Ulu II, Kota Palembang, Sumatera Selatan 30111</p>
+                <p class="text-muted"><b>Minggu, 09 Juli 2023 <br> 09.30 - Selesai</b></p>
+                <div class="row text-center">
+                  <iframe width="500" height="250"
+                    src="https://maps.google.com/maps?q=-2.98815547,104.78764038&hl=in&z=16&amp;output=embed"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="btn-wrap">
+                  <a href="https://maps.google.com/maps?q=-2.98815547,104.78764038" class="btn-buy" target="_blank">Buka
+                    Peta</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Baru Tambahan reseller-->
+        <div class="section-title section-bg">
+          <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
+          </div>
+          <div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
+            <h2><span>Menuju hari bahagia</span></h2>
+            <h3><span id="hitungmundur">
+              </span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="countdown" class="about">
+      <div class="container">
+      </div>
+    </section>
+
+
+
+
+    <section id="about" class="about section-bg">
+      <div class="container">
+        <div class="section-title">
+          <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
+            <div class="ornamen colored"></div>
+          </div>
+          <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
+            <h2><span>Informasi</span></h2>
+            <h3><span>Untuk Tamu Undangan</span></h3>
+          </div>
+        </div>
+        <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="row content">
+            <div class="col-lg-12">
+              <p style="text-align:center">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+                Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai.<br />
+                Atas kehadiran serta doa restu Bapak/Ibu/Saudara/i, kami ucapkan terimakasih.<br />
+                Wassalamualaikum Wr. Wb.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--AND  ($undangan->username != "wandimala") AND ($undangan->username != "wandinirmala")-->
+    <section id="galeri" class="about section-bg">
+      <div class="container">
+        <div class="section-title">
+          <div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
+            <h3><span>Amplop Digital</span></h3>
+          </div>
+          <br>
+          <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="row content">
+              <button class="btn-learn-more" onclick="openAmplop()">
+                Kirim Hadiah</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="jadwal1" class="about section-bg hide">
+      <div class="container">
+
+
+        <div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
+        </div>
+
+        <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000">
+          <img class="logo_streaming" height="50" src="http://localhost/undangan/assets/img/bank/bca.png">
+          <div class="row content">
+            <div class="col-lg-12">
+              <p style="text-align:center;padding-bottom:8px; font-size:20px;"><b>7005733006</b></p>
+            </div>
+            <div class="col-lg-12">
+              <p style="text-align:center;padding-bottom:12px; font-size:18px;">a/n Sri Zholeha Wulandari </p>
+            </div>
+            <a target="_blank" class="btn-learn-more copy" rekening="7005733006">Salin Rekening</a>
+          </div>
+        </div>
+        <hr>
+        <br>
+        <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000">
+          <img class="logo_streaming" height="50" src="http://localhost/undangan/assets/img/bank/mandiri.png">
+          <div class="row content">
+            <div class="col-lg-12">
+              <p style="text-align:center;padding-bottom:8px; font-size:20px;"><b>Oktrizal Setiawan </b></p>
+            </div>
+            <div class="col-lg-12">
+              <p style="text-align:center;padding-bottom:12px; font-size:18px;">a/n 1560017248388</p>
+            </div>
+            <a target="_blank" class="btn-learn-more copy2" rekening2="Oktrizal Setiawan ">Salin Rekening</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--Baru tambahan reseller-->
+    <section id="galeri" class="about section-bg">
+      <div class="container">
+        <div class="section-title">
+          <div class="aos-item" data-aos="fade-down" data-aos-duration="1000">
+            <div class="ornamen colored"></div>
+          </div>
+
+          <div class="aos-item" data-aos="fade-up" data-aos-duration="1000">
+            <h3><span>Live Streaming</span></h3>
+          </div>
+        </div>
+        <div class="aos-item" data-aos="zoom-in" data-aos-duration="1000">
+          <img class="logo_streaming" height="70" src="http://localhost/undangan/assets/img/live/instagram.png">
+          <div class="row content">
+            <div class="col-lg-12">
+              <p style="text-align:center;padding-bottom:20px; font-size:18px;">Bagi yang berhalangan datang, dapat
+                menyaksikan Live Streaming yang telah kami sediakan.</p>
+            </div>
+            <a href="https://instagram.com/zholehasw?igshid=MzNlNGNkZWQ4Mg==" target="_blank"
+              class="btn-learn-more">Buka Live Streaming</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Hanya Platinum-->
+    <!--Jika tidak disembunyikan, munculkan cerita-->
+
+  </main>
+
+  <footer id="footer">
+    <div class="container d-md-flex py-4">
+
+    </div>
+
+    <br>
+  </footer>
+  <!-- Sweet alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  <!-- start sweet alert -->
+
+  <!-- end sweet alert -->
+  <!--Baru tambahan reseller-->
+  <!--<a class="musik"><i id="musik" class="ri-music-2-line "></i></a>-->
+  <!-- <a class="musik" onclick="toggleMusic()" id="btn-playback" data-play="true"><i class="ri-music-2-line"></i></a> -->
+  <iframe src="http://localhost/undangan/assets/mp3/silence.mp3" allow="autoplay" id="audio"
+    style="display:none"></iframe>
+  <audio id="player" autoplay loop>
+    <source src="http://localhost/undangan/assets/mp3/" type="audio/mp3">
+  </audio>
+  <!-- <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a> -->
+
+
+  <script src="http://localhost/undangan/assets/theme/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="http://localhost/undangan/assets/theme/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="http://localhost/undangan/assets/theme/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="http://localhost/undangan/assets/theme/assets/vendor/php-email-form/validate.js"></script>
+  <script src="http://localhost/undangan/assets/theme/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="http://localhost/undangan/assets/theme/assets/vendor/ninja-slider/ninja-slider.js"></script>
+  <script src="http://localhost/undangan/assets/theme/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="http://localhost/undangan/assets/vendor/mosaicflow/jquery.mosaicflow.min.js"></script>
+  <script src="http://localhost/undangan/assets/vendor/aos/aos.js"></script>
+
+  <script src="http://localhost/undangan/assets/theme/assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"
+    integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ=="
+    crossorigin="anonymous"></script>
+  <!--script untuk modal slide image-->
+  <script>
+    function lightbox(idx) {
+      var ninjaSldr = document.getElementById("ninja-slider");
+      ninjaSldr.parentNode.style.display = "block";
+
+      nslider.init(idx);
+
+      var fsBtn = document.getElementById("fsBtn");
+      fsBtn.click();
+    }
+
+    function fsIconClick(isFullscreen, ninjaSldr) { //fsIconClick is the default event handler of the fullscreen button
+      if (isFullscreen) {
+        ninjaSldr.parentNode.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    // Baru tambahan reseller
+
+
+    function playAwal() {
+      const tombol = document.getElementById("btn-play");
+      const myAudio = document.getElementById("player");
+      tombol.setAttribute('data-play', 'true');
+      myAudio.play();
+      // saat buttonOnclick kita klik maka otomatis lagu langsung berjalan
+    }
+    const myAudio = document.getElementById("player");
+    const btn = document.getElementById("btn-playback");
+    const btnIcon = document.querySelector("#btn-playback > i");
+    const btnText = document.getElementById("btn-text");
+
+    const toggleMusic = () => {
+      const dataPlay = btn.getAttribute('data-play');
+
+      if (dataPlay === 'false') {
+        btn.setAttribute('data-play', 'true');
+        myAudio.play();
+        btnIcon.classList.remove("ri-play-fill");
+        btnIcon.classList.add("ri-music-2-line");
+      } else {
+        btn.setAttribute('data-play', 'false');
+        myAudio.pause();
+        btnIcon.classList.remove("ri-music-2-line");
+        btnIcon.classList.add("ri-play-fill");
+      }
+    };
+
+    myAudio.onpause = () => {
+      btn.setAttribute('data-play', 'false');
+      myAudio.pause();
+      btnIcon.classList.remove("ri-music-2-line");
+      btnIcon.classList.add("ri-play-fill");
+    };
+
+
+
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+    // Set the date we're counting down to (Platinum saja)
+    var tanggal_acara = "2023-07-09 09:30:00"
+    var countDownDate = new Date(tanggal_acara.replace(' ', 'T')).getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Tampilkan hasil element id="hitungmundur"
+      document.getElementById("hitungmundur").innerHTML = days + "hari " + hours + "jam " +
+        minutes + "menit ";
+
+      // Kalau melewati waktu nikah, muncul tulisan selesai
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("hitungmundur").innerHTML = "Acara Telah Selesai";
+      }
+    }, 1000);
+
+
+    function copyToClipboard(elem) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(elem).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+
+    $(".copy").on("click", function () {
+      var elem = $(this).attr("rekening")
+      alert("Rekening 1 Berhasil disalin.")
+      copyToClipboard(elem)
+    })
+
+    $(".copy2").on("click", function () {
+      var elem = $(this).attr("rekening2")
+      alert("Rekening 2 Berhasil disalin.")
+      copyToClipboard(elem)
+    })
+
+    $(".btn-open").on("click", function () {
+      $("#loader-wrapper").slideToggle("slow");
+    })
+  </script>
+</body>
+
+</html>
